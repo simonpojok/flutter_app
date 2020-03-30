@@ -198,3 +198,8 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
 }
 
 
+class TodoMenuItem {
+  final String title;
+  final Icon icon;
+  TodoMenuItem({ this.title, this.icon});
+}
