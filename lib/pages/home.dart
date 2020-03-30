@@ -62,7 +62,11 @@ class _HomeState extends State<Home> {
   }
 }
 
-class RowWidget {
+class RowWidget extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return null;
+  }
 }
 
 class ColumnWidget extends StatelessWidget {
