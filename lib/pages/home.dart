@@ -68,7 +68,14 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(100.0),
               bottomRight: Radius.circular(10.0)
-            )
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.white,
+                blurRadius: 10.0,
+                offset: Offset(0.0, 10.0)
+              )
+            ]
           ),
         ),
       ],
