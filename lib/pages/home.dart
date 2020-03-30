@@ -62,6 +62,16 @@ class _HomeState extends State<Home> {
   }
 }
 
+class ColumnAndRowNestingWidget extends StatelessWidget {
+  const ColumnAndRowNestingWidget({ Key key, }): super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return null;
+  }
+  
+}
+
 class RowWidget extends StatelessWidget{
   const RowWidget({ Key key, }): super(key: key);
   @override
