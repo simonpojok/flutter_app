@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
       ),
       body: Padding(
         child: SafeArea(
-          
+          child: SingleChildScrollView(),
         ),
       ),
     );
