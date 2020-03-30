@@ -62,6 +62,9 @@ class _HomeState extends State<Home> {
   }
 }
 
+class ColumnWidget {
+}
+
 class ContainerWithBoxDecorationWidget extends StatelessWidget{
   const ContainerWithBoxDecorationWidget({ Key key, }): super(key: key);
   @override
