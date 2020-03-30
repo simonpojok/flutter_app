@@ -62,6 +62,9 @@ class _HomeState extends State<Home> {
   }
 }
 
+class RowWidget {
+}
+
 class ColumnWidget extends StatelessWidget {
   const ColumnWidget({Key key, }): super(key: key);
 
