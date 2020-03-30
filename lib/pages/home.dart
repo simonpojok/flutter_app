@@ -55,3 +55,12 @@ class _HomeState extends State<Home> {
     );
   }
 }
+
+class ContainerWithBoxDecorationWidget extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return null;
+  }
+}
+
