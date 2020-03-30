@@ -64,7 +64,12 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
       children: <Widget>[
         Container(
           height: 100.0,
-          decoration: BoxDecoration(),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(100.0),
+              bottomRight: Radius.circular(10.0)
+            )
+          ),
         ),
       ],
     );
