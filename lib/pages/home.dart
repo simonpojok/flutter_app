@@ -25,6 +25,9 @@ class _HomeState extends State<Home> {
             onPressed: () {},
           ),
         ],
+        flexibleSpace: SafeArea(
+          child: Icon(Icons.photo_camera, size: 75.0, color: Colors.white70),
+        ),
       ),
     );
   }
