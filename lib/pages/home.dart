@@ -62,7 +62,10 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Container(),
+        Container(
+          height: 100.0,
+          decoration: BoxDecoration(),
+        ),
       ],
     );
   }
