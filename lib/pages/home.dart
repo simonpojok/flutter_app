@@ -46,7 +46,13 @@ class _HomeState extends State<Home> {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                const ContainerWithBoxDecorationWidget()
+                const ContainerWithBoxDecorationWidget(),
+                Divider(),
+                const ColumnWidget(),
+                Divider(),
+                const RowWidget(),
+                Divider(),
+                const ColumnAndRowNestingWidget()
               ],
             ),
           ),
