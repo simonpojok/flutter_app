@@ -41,8 +41,15 @@ class _HomeState extends State<Home> {
         ),
       ),
       body: Padding(
+        padding: EdgeInsets.all(16.0),
         child: SafeArea(
-          child: SingleChildScrollView(),
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                
+              ],
+            ),
+          ),
         ),
       ),
     );
