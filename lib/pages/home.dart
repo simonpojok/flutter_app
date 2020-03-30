@@ -90,7 +90,13 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
               text: TextSpan(
                 text: 'Flutter World',
                 style: TextStyle(
-                  
+                  fontSize: 24.0,
+                  color: Colors.deepPurple,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.deepPurpleAccent,
+                  decorationStyle: TextDecorationStyle.dotted,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.normal
                 ),
               ),
             ),
