@@ -86,7 +86,11 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
             )
           ),
           child: Center(
-            
+            child: RichText(
+              text: TextSpan(
+                text: 'Flutter World'
+              ),
+            ),
           ),
         ),
       ],
