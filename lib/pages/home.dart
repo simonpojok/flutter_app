@@ -40,6 +40,11 @@ class _HomeState extends State<Home> {
           preferredSize: Size.fromHeight(75.0),
         ),
       ),
+      body: Padding(
+        child: SafeArea(
+          
+        ),
+      ),
     );
   }
 }
