@@ -14,7 +14,17 @@ class _HomeState extends State<Home> {
           icon: Icon(Icons.menu),
           onPressed: () {},
         ),
-        title: Text('Home')
+        title: Text('Home'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.more_vert),
+            onPressed: () {},
+          ),
+        ],
       ),
     );
   }
