@@ -99,7 +99,17 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
                   fontWeight: FontWeight.normal
                 ),
                 children: <TextSpan>[
-                  
+                  TextSpan(
+                    text: ' for '
+                  ),
+                  TextSpan(
+                    text: ' Mobile',
+                    style: TextStyle(
+                      color: Colors.deepOrange,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.bold
+                    ),
+                  ),
                 ]
               ),
             ),
