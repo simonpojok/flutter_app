@@ -67,8 +67,18 @@ class ColumnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return null;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisSize: MainAxisSize.max,
+      children: <Widget>[
+        Text('Column 1'),
+        Divider(),
+        Text('Column 2'),
+        Divider(),
+        Text('Column 3')
+      ],
+    );
   }
 }
 
