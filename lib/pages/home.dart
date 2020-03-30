@@ -63,7 +63,9 @@ class _HomeState extends State<Home> {
 }
 
 class ColumnAndRowNestingWidget extends StatelessWidget {
-  const ColumnAndRowNestingWidget({ Key key, }): super(key: key);
+  const ColumnAndRowNestingWidget({
+    Key key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +77,9 @@ class ColumnAndRowNestingWidget extends StatelessWidget {
         Text('Columns and Row Nesting 1'),
         Text('Columns and Row Nesting 2'),
         Text('Columns and Row Nesting 3'),
-        Padding(padding: EdgeInsets.all(16.0),),
+        Padding(
+          padding: EdgeInsets.all(16.0),
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
@@ -87,11 +91,12 @@ class ColumnAndRowNestingWidget extends StatelessWidget {
       ],
     );
   }
-  
 }
 
-class RowWidget extends StatelessWidget{
-  const RowWidget({ Key key, }): super(key: key);
+class RowWidget extends StatelessWidget {
+  const RowWidget({
+    Key key,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -102,9 +107,13 @@ class RowWidget extends StatelessWidget{
         Row(
           children: <Widget>[
             Text('Row 1'),
-            Padding(padding: EdgeInsets.all(16.0),),
+            Padding(
+              padding: EdgeInsets.all(16.0),
+            ),
             Text('Row 2'),
-            Padding(padding: EdgeInsets.all(16.0),),
+            Padding(
+              padding: EdgeInsets.all(16.0),
+            ),
             Text('Row 3')
           ],
         ),
@@ -114,7 +123,9 @@ class RowWidget extends StatelessWidget{
 }
 
 class ColumnWidget extends StatelessWidget {
-  const ColumnWidget({Key key, }): super(key: key);
+  const ColumnWidget({
+    Key key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -133,8 +144,10 @@ class ColumnWidget extends StatelessWidget {
   }
 }
 
-class ContainerWithBoxDecorationWidget extends StatelessWidget{
-  const ContainerWithBoxDecorationWidget({ Key key, }): super(key: key);
+class ContainerWithBoxDecorationWidget extends StatelessWidget {
+  const ContainerWithBoxDecorationWidget({
+    Key key,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -142,53 +155,41 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
         Container(
           height: 100.0,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(100.0),
-              bottomRight: Radius.circular(10.0)
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.white,
-                blurRadius: 10.0,
-                offset: Offset(0.0, 10.0)
-              )
-            ],
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                Colors.white,
-                Colors.lightGreen.shade500
-              ]
-            )
-          ),
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(100.0),
+                  bottomRight: Radius.circular(10.0)),
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.white,
+                    blurRadius: 10.0,
+                    offset: Offset(0.0, 10.0))
+              ],
+              gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.white, Colors.lightGreen.shade500])),
           child: Center(
             child: RichText(
               text: TextSpan(
-                text: 'Flutter World',
-                style: TextStyle(
-                  fontSize: 24.0,
-                  color: Colors.deepPurple,
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.deepPurpleAccent,
-                  decorationStyle: TextDecorationStyle.dotted,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.normal
-                ),
-                children: <TextSpan>[
-                  TextSpan(
-                    text: ' for '
-                  ),
-                  TextSpan(
-                    text: ' Mobile',
-                    style: TextStyle(
-                      color: Colors.deepOrange,
-                      fontStyle: FontStyle.normal,
-                      fontWeight: FontWeight.bold
+                  text: 'Flutter World',
+                  style: TextStyle(
+                      fontSize: 24.0,
+                      color: Colors.deepPurple,
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.deepPurpleAccent,
+                      decorationStyle: TextDecorationStyle.dotted,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.normal),
+                  children: <TextSpan>[
+                    TextSpan(text: ' for '),
+                    TextSpan(
+                      text: ' Mobile',
+                      style: TextStyle(
+                          color: Colors.deepOrange,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold),
                     ),
-                  ),
-                ]
-              ),
+                  ]),
             ),
           ),
         ),
@@ -197,9 +198,15 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
   }
 }
 
-
 class TodoMenuItem {
   final String title;
   final Icon icon;
-  TodoMenuItem({ this.title, this.icon});
+  TodoMenuItem({this.title, this.icon});
 }
+
+List<TodoMenuItem> foodMenuList = [
+  TodoMenuItem(title: 'Fast Food', icon: Icon(Icons.fastfood)),
+  TodoMenuItem(title: 'Remind Me', icon: Icon(Icons.add_alarm)),
+  TodoMenuItem(title: 'Flight', icon: Icon(Icons.flight)),
+  TodoMenuItem(title: 'Music', icon: Icon(Icons.audiotrack)),
+];
