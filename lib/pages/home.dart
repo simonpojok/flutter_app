@@ -87,7 +87,9 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
           ),
           child: Center(
             child: Text(
-              'Flutter World for Mobile',
+              '''
+              Flutter World for Mobile
+              ''',
               style: TextStyle(
                 fontSize: 24.0,
                 color: Colors.deepPurple,
