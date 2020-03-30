@@ -98,6 +98,9 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
                   fontStyle: FontStyle.italic,
                   fontWeight: FontWeight.normal
                 ),
+                children: <TextSpan>[
+                  
+                ]
               ),
             ),
           ),
