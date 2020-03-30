@@ -14,6 +14,7 @@ class _HomeState extends State<Home> {
           icon: Icon(Icons.menu),
           onPressed: () {},
         ),
+        title: Text('Home')
       ),
     );
   }
