@@ -57,6 +57,7 @@ class _HomeState extends State<Home> {
 }
 
 class ContainerWithBoxDecorationWidget extends StatelessWidget{
+  const ContainerWithBoxDecorationWidget({ Key key, }): super(key: key);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
