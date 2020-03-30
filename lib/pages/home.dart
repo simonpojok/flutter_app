@@ -75,8 +75,17 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget{
                 blurRadius: 10.0,
                 offset: Offset(0.0, 10.0)
               )
-            ]
+            ],
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.white,
+                Colors.lightGreen.shade500
+              ]
+            )
           ),
+          child: Center(child: Text('Container'),),
         ),
       ],
     );
