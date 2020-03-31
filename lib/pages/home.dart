@@ -75,7 +75,19 @@ class ButtonsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return null;
+    return Column(
+      children: <Widget>[
+        Row(
+          children: <Widget>[
+            Padding(padding: EdgeInsets.all(16.0),),
+            FlatButton(
+              onPressed: () {},
+              child: Text('Flag'),
+            ),
+          ],
+        ),
+      ],
+    );
   }
 }
 
