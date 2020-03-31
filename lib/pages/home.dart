@@ -213,4 +213,14 @@ List<TodoMenuItem> foodMenuList = [
 
 class PopupMenuButtonWidget extends StatelessWidget implements PreferredSizeWidget {
   const PopupMenuButtonWidget ({ Key key }): super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return null;
+  }
+
+  @override
+  // TODO: implement preferredSize
+  Size get preferredSize => null;
 }
