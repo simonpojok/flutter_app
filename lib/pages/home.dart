@@ -246,6 +246,5 @@ class PopupMenuButtonWidget extends StatelessWidget implements PreferredSizeWidg
   }
 
   @override
-  // TODO: implement preferredSize
-  Size get preferredSize => null;
+  Size get preferredSize => Size.fromHeight(75.0);
 }
