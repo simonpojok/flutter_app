@@ -53,7 +53,11 @@ class _HomeState extends State<Home> {
                 Divider(),
                 const RowWidget(),
                 Divider(),
-                const ColumnAndRowNestingWidget()
+                const ColumnAndRowNestingWidget(),
+                Divider(),
+                const ButtonsWidget(),
+                Divider(),
+                const ButtonBarWidget(),
               ],
             ),
           ),
