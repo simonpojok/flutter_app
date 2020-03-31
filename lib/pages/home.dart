@@ -109,6 +109,24 @@ class ButtonsWidget extends StatelessWidget {
             ),
           ],
         ),
+        Divider(),
+        Row(
+          children: <Widget>[
+            Padding(padding: EdgeInsets.all(16.0),),
+            IconButton(
+              icon: Icon(Icons.flight),
+              onPressed: () {},
+            ),
+            Padding(padding: EdgeInsets.all(16.0),),
+            IconButton(
+              icon: Icon(Icons.flight),
+              iconSize: 42.0,
+              color: Colors.lightGreen,
+              tooltip: 'Flight',
+              onPressed: () {},
+            ),
+          ],
+        ),
       ],
     );
   }
