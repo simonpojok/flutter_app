@@ -67,6 +67,9 @@ class _HomeState extends State<Home> {
   }
 }
 
+class ButtonBarWidget {
+}
+
 class ButtonsWidget {
 }
 
