@@ -81,6 +81,15 @@ class ButtonBarWidget extends StatelessWidget {
             icon: Icon(Icons.map),
             onPressed: () {},
           ),
+          IconButton(
+            icon: Icon(Icons.airport_shuttle),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.brush),
+            highlightColor: Colors.purple,
+            onPressed: () {},
+          ),
         ],
       ),
     );
