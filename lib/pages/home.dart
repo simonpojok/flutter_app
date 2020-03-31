@@ -101,6 +101,12 @@ class ButtonsWidget extends StatelessWidget {
               onPressed: () {},
               child: Text('Save'),
             ),
+            Padding(padding: EdgeInsets.all(16.0),),
+            RaisedButton(
+              onPressed: () {},
+              child: Icon(Icons.save),
+              color: Colors.lightGreen
+            ),
           ],
         ),
       ],
