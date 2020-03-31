@@ -72,7 +72,18 @@ class ButtonBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return null;
+    return Container(
+      color: Colors.white70,
+      child: ButtonBar(
+        alignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          IconButton(
+            icon: Icon(Icons.map),
+            onPressed: () {},
+          ),
+        ],
+      ),
+    );
   }
 }
 
