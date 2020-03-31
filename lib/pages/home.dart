@@ -210,3 +210,7 @@ List<TodoMenuItem> foodMenuList = [
   TodoMenuItem(title: 'Flight', icon: Icon(Icons.flight)),
   TodoMenuItem(title: 'Music', icon: Icon(Icons.audiotrack)),
 ];
+
+class PopupMenuButtonWidget extends StatelessWidget implements PreferredSizeWidget {
+  const PopupMenuButtonWidget ({ Key key }): super(key: key);
+}
