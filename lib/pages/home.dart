@@ -93,6 +93,16 @@ class ButtonsWidget extends StatelessWidget {
             ),
           ],
         ),
+        Divider(),
+        Row(
+          children: <Widget>[
+            Padding(padding: EdgeInsets.all(16.0),),
+            RaisedButton(
+              onPressed: () {},
+              child: Text('Save'),
+            ),
+          ],
+        ),
       ],
     );
   }
