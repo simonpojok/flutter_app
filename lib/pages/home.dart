@@ -127,6 +127,7 @@ class ButtonsWidget extends StatelessWidget {
             ),
           ],
         ),
+        Divider(),
       ],
     );
   }
