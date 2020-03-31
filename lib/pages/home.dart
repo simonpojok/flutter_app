@@ -84,6 +84,13 @@ class ButtonsWidget extends StatelessWidget {
               onPressed: () {},
               child: Text('Flag'),
             ),
+            Padding(padding: EdgeInsets.all(16.0),),
+            FlatButton(
+              onPressed: () {},
+              child: Icon(Icons.flag),
+              color: Colors.lightGreen,
+              textColor: Colors.white,
+            ),
           ],
         ),
       ],
