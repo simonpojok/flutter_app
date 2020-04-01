@@ -24,7 +24,11 @@ class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
               duration: Duration(microseconds: 500),
               sizeCurve: Curves.bounceOut,
               crossFadeState: _crossFadeStateShowFirst? CrossFadeState.showFirst: CrossFadeState.showSecond,
-              firstChild: Container(),
+              firstChild: Container(
+                color: Colors.amber,
+                height: 100.0,
+                width: 100.0,
+              ),
             ),
           ],
         )
