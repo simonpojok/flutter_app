@@ -17,7 +17,12 @@ class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        Stack()
+        Stack(
+          alignment: Alignment.center,
+          children: <Widget>[
+            AnimatedCrossFade(),
+          ],
+        )
       ],
     );
   }
