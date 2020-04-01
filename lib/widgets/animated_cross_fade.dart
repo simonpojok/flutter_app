@@ -29,6 +29,7 @@ class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
                 height: 100.0,
                 width: 100.0,
               ),
+              secondChild: Container(),
             ),
           ],
         )
