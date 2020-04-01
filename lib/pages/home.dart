@@ -12,6 +12,12 @@ class _HomeState extends State<Home> {
   String _validateItemRequired(String value) {
     return value.isEmpty ? 'Item Required': null;
   }
+
+  String _validateItemCount(String value) {
+    int _valueAsInteger = value.isEmpty ? 0 : int.tryParse(value);
+    return _valueAsInteger == 0 ? 'At least one Item is required': null;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
