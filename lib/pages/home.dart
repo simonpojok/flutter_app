@@ -26,5 +26,9 @@ class _HomeState extends State<Home> {
   }
 }
 
-class OrientationLayoutIconsWidget {
+class OrientationLayoutIconsWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return null;
+  }
 }
