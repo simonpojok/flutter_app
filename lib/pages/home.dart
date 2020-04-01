@@ -51,7 +51,18 @@ class _HomeState extends State<Home> {
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            Form(),
+            Form(
+              key: _formStateKey,
+              autovalidate: true,
+              child: Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Column(
+                  children: <Widget>[
+                    
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
