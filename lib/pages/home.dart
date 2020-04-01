@@ -28,8 +28,10 @@ class _HomeState extends State<Home> {
 
 class OrientationLayoutIconsWidget extends StatelessWidget {
   const OrientationLayoutIconsWidget({ Key key, }): super(key: key);
+
   @override
   Widget build(BuildContext context) {
+    Orientation orientation = MediaQuery.of(context).orientation;
     return null;
   }
 }
