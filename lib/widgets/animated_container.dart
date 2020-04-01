@@ -24,7 +24,10 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
           color: Colors.amber,
           height: _height,
           width: _width,
-          child: FlatButton(),
+          child: FlatButton(
+            child: Text('Tap  to \nGrow Width\n$_width'),
+            onPressed: () => _increaseWidth(),
+          ),
         ),
       ],
     );
