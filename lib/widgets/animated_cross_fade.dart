@@ -35,6 +35,14 @@ class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
                 width: 200.0,
               ),
             ),
+            Positioned.fill(
+              child: FlatButton(
+                child: Text('Tap to \nFade Color & Size'),
+                onPressed: () {
+                  _crossFade();
+                }
+              ),
+            )
           ],
         )
       ],
