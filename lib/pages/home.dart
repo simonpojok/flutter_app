@@ -19,6 +19,8 @@ class _HomeState extends State<Home> {
                 const OrientationLayoutIconsWidget(),
                 Divider(),
                 const OrientationLayoutWidget(),
+                Divider(),
+                GridViewWidget()
               ],
             ),
           ),
@@ -26,6 +28,9 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+}
+
+class GridViewWidget {
 }
 
 class OrientationLayoutWidget extends StatelessWidget{
