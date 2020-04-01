@@ -39,3 +39,8 @@ class _HomeState extends State<Home> {
     );
   }
 }
+
+class Order {
+  String item;
+  int quantity;
+}
