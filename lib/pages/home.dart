@@ -63,6 +63,8 @@ class _HomeState extends State<Home> {
                         hintText: 'Espresso',
                         labelText: 'Item',
                       ),
+                      validator: (value) => _validateItemRequired(value),
+                      onSaved: (value) => _order.item = value,
                     ),
                   ],
                 ),
