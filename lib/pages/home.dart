@@ -13,7 +13,12 @@ class _HomeState extends State<Home> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            
+            padding: EdgeInsets.all(16.0),
+            child: Column(
+              children: <Widget>[
+                const OrientationLayoutIconsWidget(),
+              ],
+            ),
           ),
         ),
       ),
