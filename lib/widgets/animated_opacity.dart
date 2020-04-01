@@ -14,6 +14,22 @@ class _AnimatedOpacityWidgetState extends State<AnimatedOpacityWidget> {
   }
   @override
   Widget build(BuildContext context) {
-    return Row();
+    return Row(
+      children: <Widget>[
+        AnimatedOpacity(
+          duration: Duration(milliseconds: 500),
+          opacity: _opacity,
+          child: Container(
+            color: Colors.amber,
+            height: 100.0,
+            width: 100.0,
+            child: FlatButton(
+              child: Text('Tap to Fade'),
+              onPressed: () => _animatedOpacity(),
+            ),
+          ),
+        )
+      ],
+    );
   }
 }
