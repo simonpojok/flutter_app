@@ -52,7 +52,7 @@ class OrientationBuilderWidget extends StatelessWidget {
           height: 100.0,
           width: 200.0,
           child: Text('Lanscape'),
-        )
+        );
       },
     );
   }
