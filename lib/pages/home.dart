@@ -29,17 +29,8 @@ class _HomeState extends State<Home> {
           child: Icon(Icons.photo_camera, size: 75.0, color: Colors.white70),
         ),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(16.0),
-        child: SafeArea(
-          child: SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                
-              ],
-            ),
-          ),
-        ),
+      body: SafeArea(
+        
       ),
     );
   }
