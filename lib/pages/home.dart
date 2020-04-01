@@ -7,6 +7,11 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final GlobalKey<FormState> _formStateKey = GlobalKey<FormState>();
+  Order _order = Order();
+
+  String _validateItemRequired(String value) {
+    return value.isEmpty ? 'Item Required': null;
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
