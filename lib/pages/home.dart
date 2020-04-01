@@ -39,6 +39,10 @@ class GridViewWidget extends StatelessWidget {
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
       crossAxisCount: _orientation == Orientation.portrait?  2: 4,
+      childAspectRatio: 5.0,
+      children: List.generate(8, (int index) {
+        return Text('Grid $index', textAlign: TextAlign.center,);
+      }),
     );
   }
 }
