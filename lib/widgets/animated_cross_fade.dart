@@ -10,7 +10,7 @@ class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
   bool _crossFadeStateShowFirst = true;
   _crossFade() {
     setState(() {
-      
+      _crossFadeStateShowFirst = _crossFadeStateShowFirst ? false : true;
     });
   }
   @override
