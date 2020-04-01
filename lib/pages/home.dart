@@ -31,8 +31,10 @@ class _HomeState extends State<Home> {
 }
 
 class GridViewWidget extends StatelessWidget {
+  const GridViewWidget({ Key key, }): super(key: key);
   @override
   Widget build(BuildContext context) {
+    Orientation _orientation =  MediaQuery.of(context).orientation;
     return null;
   }
 }
