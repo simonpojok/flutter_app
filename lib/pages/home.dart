@@ -12,13 +12,17 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Animations'),),
+      appBar: AppBar(
+        title: Text('Animations'),
+      ),
       body: SafeArea(
         child: Column(
           children: <Widget>[
             AnimatedContainerWidget(),
             Divider(),
             AnimatedCrossFadeWidget(),
+            Divider(),
+            AnimatedOpacityWidget(),
           ],
         ),
       ),
