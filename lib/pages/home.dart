@@ -10,12 +10,12 @@ class _HomeState extends State<Home> {
   Order _order = Order();
 
   String _validateItemRequired(String value) {
-    return value.isEmpty ? 'Item Required': null;
+    return value.isEmpty ? 'Item Required' : null;
   }
 
   String _validateItemCount(String value) {
     int _valueAsInteger = value.isEmpty ? 0 : int.tryParse(value);
-    return _valueAsInteger == 0 ? 'At least one Item is required': null;
+    return _valueAsInteger == 0 ? 'At least one Item is required' : null;
   }
 
   void _submitOrder() {
@@ -25,6 +25,7 @@ class _HomeState extends State<Home> {
       print('Order Quantity: ${_order.quantity}');
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,6 +66,20 @@ class _HomeState extends State<Home> {
                       ),
                       validator: (value) => _validateItemRequired(value),
                       onSaved: (value) => _order.item = value,
+                    ),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: '3',
+                        labelText: 'Quantity',
+                      ),
+                      validator: (value) => _validateItemCount(value),
+                      onSaved: (value) => _order.quantity = int.tryParse(value),
+                    ),
+                    Divider(),
+                    RaisedButton(
+                      child: Text('Save'),
+                      color: Colors.lightBlue,
+                      onPressed: () => _submitOrder(),
                     ),
                   ],
                 ),
