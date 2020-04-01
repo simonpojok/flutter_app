@@ -32,7 +32,8 @@ class OrientationLayoutWidget extends StatelessWidget{
   const OrientationLayoutWidget({ Key key, }): super(key: key);
   @override
   Widget build(BuildContext context) {
-    return null;
+    Orientation _orientation = MediaQuery.of(context).orientation;
+    return _orientation == Orientation.portrait? Row() : Row();
   }
 }
 
