@@ -20,7 +20,11 @@ class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
         Stack(
           alignment: Alignment.center,
           children: <Widget>[
-            AnimatedCrossFade(),
+            AnimatedCrossFade(
+              duration: Duration(microseconds: 500),
+              sizeCurve: Curves.bounceOut,
+              crossFadeState: _crossFadeStateShowFirst? CrossFadeState.showFirst: CrossFadeState.showSecond,
+            ),
           ],
         )
       ],
