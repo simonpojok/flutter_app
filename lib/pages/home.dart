@@ -20,13 +20,22 @@ class _HomeState extends State<Home> {
                 Divider(),
                 const OrientationLayoutWidget(),
                 Divider(),
-                GridViewWidget()
+                GridViewWidget(),
+                Divider(),
+                OrientationBuilderWidget(),
               ],
             ),
           ),
         ),
       ),
     );
+  }
+}
+
+class OrientationBuilderWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return null;
   }
 }
 
