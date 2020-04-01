@@ -35,7 +35,11 @@ class GridViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Orientation _orientation =  MediaQuery.of(context).orientation;
-    return null;
+    return GridView.count(
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
+      crossAxisCount: _orientation == Orientation.portrait?  2: 4,
+    );
   }
 }
 
