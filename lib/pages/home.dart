@@ -30,7 +30,11 @@ class _HomeState extends State<Home> {
   }
 }
 
-class GridViewWidget {
+class GridViewWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return null;
+  }
 }
 
 class OrientationLayoutWidget extends StatelessWidget{
