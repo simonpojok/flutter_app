@@ -33,9 +33,18 @@ class _HomeState extends State<Home> {
 }
 
 class OrientationBuilderWidget extends StatelessWidget {
+  const OrientationBuilderWidget({ Key key, }): super(key: key);
+
+
   @override
   Widget build(BuildContext context) {
-    return null;
+    return OrientationBuilder(
+      builder: (BuildContext context, Orientation orientation) {
+        return orientation == Orientation.portrait ? Container(
+          alignment: Alignment.center,
+        ): 
+      },
+    );
   }
 }
 
