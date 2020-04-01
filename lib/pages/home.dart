@@ -18,6 +18,13 @@ class _HomeState extends State<Home> {
     return _valueAsInteger == 0 ? 'At least one Item is required': null;
   }
 
+  void _submitOrder() {
+    if (_formStateKey.currentState.validate()) {
+      _formStateKey.currentState.save();
+      print('Order Item: ${_order.item}');
+      print('Order Quantity: ${_order.quantity}');
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
