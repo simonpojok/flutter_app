@@ -58,7 +58,12 @@ class _HomeState extends State<Home> {
                 padding: EdgeInsets.all(16.0),
                 child: Column(
                   children: <Widget>[
-                    
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: 'Espresso',
+                        labelText: 'Item',
+                      ),
+                    ),
                   ],
                 ),
               ),
