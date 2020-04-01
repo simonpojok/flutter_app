@@ -14,8 +14,6 @@ class _AnimatedOpacityWidgetState extends State<AnimatedOpacityWidget> {
   }
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-    );
+    return Row();
   }
 }
