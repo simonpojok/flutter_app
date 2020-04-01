@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/widgets/animated_container.dart';;
+import 'package:flutter_app/widgets/animated_container.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -9,8 +9,15 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(title: Text('Animations'),),
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            
+          ],
+        ),
+      ),
     );
   }
 }
