@@ -15,8 +15,10 @@ class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
   }
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Row(
+      children: <Widget>[
+        Stack()
+      ],
     );
   }
 }
