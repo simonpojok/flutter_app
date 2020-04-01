@@ -28,7 +28,12 @@ class _HomeState extends State<Home> {
   }
 }
 
-class OrientationLayoutWidget {
+class OrientationLayoutWidget extends StatelessWidget{
+  const OrientationLayoutWidget({ Key key, }): super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return null;
+  }
 }
 
 class OrientationLayoutIconsWidget extends StatelessWidget {
