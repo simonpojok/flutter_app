@@ -16,8 +16,12 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
   }
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Row(
+      children: <Widget>[
+        AnimatedContainer(
+          
+        ),
+      ],
     );
   }
 }
