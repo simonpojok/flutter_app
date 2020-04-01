@@ -31,7 +31,27 @@ class OrientationLayoutIconsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Orientation orientation = MediaQuery.of(context).orientation;
-    return null;
+    Orientation _orientation = MediaQuery.of(context).orientation;
+    return _orientation == Orientation.portrait ? Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Icon(
+          Icons.school,
+          size: 48.0,
+        )
+      ],
+    ): Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Icon(
+          Icons.school,
+          size: 48.0,
+        ),
+        Icon(
+          Icons.brush,
+          size: 48.0,
+        )
+      ],
+    );
   }
 }
