@@ -32,7 +32,14 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
             Navigator.push(context, MaterialPageRoute(builder: (context) => Gratitude()))
           },
         ),
-        ListTile(),
+        ListTile(
+          leading: Icon(Icons.alarm),
+          title: Text('Reminders'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Reminders()))
+          },
+        ),
         Divider(color: Colors.grey),
         ListTile(),
       ],
