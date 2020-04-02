@@ -45,7 +45,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
         ),
       ),
       bottomNavigationBar: SafeArea(
-        child: TabBar(),
+        child: TabBar(
+          controller: _tabController,
+          labelColor: Colors.black12,
+          unselectedLabelColor: Colors.black45,
+        ),
       ),
     );
   }
