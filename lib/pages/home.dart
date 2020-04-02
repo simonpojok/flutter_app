@@ -6,6 +6,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  int _currentIndex = 0;
+  List _listPages = List();
+  Widget _currentPage;
+  
   void _changePage(int selectedIndex) {
     setState(() {
       _currentIndex = selectedIndex;
