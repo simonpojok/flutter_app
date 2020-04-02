@@ -12,7 +12,13 @@ class _RightDrawerWidgetState extends State<RightDrawerWidget> {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          DrawerHeader(),
+          DrawerHeader(
+            padding: EdgeInsets.zero,
+            child: Icon(Icons.face, size: 128.0, color: Colors.white54),
+            decoration: BoxDecoration(
+              color: Colors.blue
+            ),
+          ),
           MenuListTileWidget(),
         ],
       ),
