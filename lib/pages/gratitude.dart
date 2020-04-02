@@ -11,6 +11,13 @@ class _GratitudeState extends State<Gratitude> {
   List<String> _gratitudeList = List();
   String _selectedGratitude;
   int _radioGroupValue;
+
+  void _radioOnChanged(int index) {
+    setState(() {
+      
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
