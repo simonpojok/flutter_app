@@ -44,7 +44,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           ],
         ),
       ),
-      bottomNavigationBar: SafeArea(),
+      bottomNavigationBar: SafeArea(
+        child: TabBar(),
+      ),
     );
   }
 }
