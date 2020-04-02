@@ -9,6 +9,27 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
+  TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(vsync: this, length: 3);
+    _tabController.addListener(_tabChanged);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _tabController.dispose();
+  }
+
+  void _tabChanged() {
+    if (_tabController.indexIsChanging) {
+      print('tabChanged: ${_tabController.index}');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +44,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           ],
         ),
       ),
+      bottomNavigationBar: SafeArea(),
     );
   }
 }
