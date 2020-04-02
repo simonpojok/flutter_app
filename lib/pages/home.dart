@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/left_drawer.dart';
+import 'package:flutter_app/widgets/right_drawer.dart';
 import 'birthdays.dart';
 import 'gratitude.dart';
 import 'reminders.dart';
@@ -13,9 +15,11 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Birthdayss'),),
-      body: Center(
-        child: ,
+      body: SafeArea(
+        child: Container(),
       ),
+      drawer: LeftDrawerWidget(),
+      endDrawer: RightDrawerWidget(),
     );
   }
 }
