@@ -17,6 +17,11 @@ class _HomeState extends State<Home> {
       )
     );
   }
+
+  void _openPageGratitude({ BuildContext context, bool fullscreenDialog = false }) async {
+    final String _gratitudeResponse = await Navigator.push(context, route)
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

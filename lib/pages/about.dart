@@ -8,6 +8,7 @@ class About extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
+          child: Text('About Page'),
         ),
       ),
     );
