@@ -38,6 +38,7 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
     );
   }
 }
