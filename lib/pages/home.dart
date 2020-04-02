@@ -16,6 +16,9 @@ class _HomeState extends State<Home> {
           child: _currentPage,
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+      ),
     );
   }
 }
