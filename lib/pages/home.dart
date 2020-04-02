@@ -21,9 +21,18 @@ class _HomeState extends State<Home> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.cake),
-            title: Text('Birthdays')
+            title: Text('Birthdays'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.sentiment_satisfied),
+            title: Text('Gratitude')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.access_alarm),
+            title: Text('Reminders')
           ),
         ],
+        onTap: (selectedIndex) => _changePage(selectedIndex),
       ),
     );
   }
