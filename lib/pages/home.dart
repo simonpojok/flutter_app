@@ -10,7 +10,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: GestureDetectorWidget(),
+        ),
       ),
     );
   }
