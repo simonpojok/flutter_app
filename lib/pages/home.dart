@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'gratitude.dart';
+import 'reminders.dart';
+import 'birthdays.dart';
 
 class Home extends StatefulWidget {
   @override
