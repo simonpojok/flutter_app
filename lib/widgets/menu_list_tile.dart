@@ -41,7 +41,11 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
           },
         ),
         Divider(color: Colors.grey),
-        ListTile(),
+        ListTile(
+          leading: Icon(Icons.settings),
+          title: Text('Setting'),
+          onTap: () { Navigator.pop(context); },
+        ),
       ],
     );
   }
