@@ -13,6 +13,11 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+    _listPages
+      ..add(Birthdays())
+      ..add(Gratitude())
+      ..add(Reminders());
+      _currentPage = Birthdays();
   }
 
 
