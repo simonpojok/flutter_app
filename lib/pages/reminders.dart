@@ -1,14 +1,18 @@
+// reminders.dart
 import 'package:flutter/material.dart';
 
 class Reminders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Reminders'),
+      ),
       body: Center(
         child: Icon(
-          Icons.alarm,
+          Icons.access_alarm,
           size: 120.0,
-          color: Colors.orange,
+          color: Colors.purple,
         ),
       ),
     );
