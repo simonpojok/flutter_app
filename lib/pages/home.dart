@@ -19,7 +19,11 @@ class _HomeState extends State<Home> {
   }
 
   void _openPageGratitude({ BuildContext context, bool fullscreenDialog = false }) async {
-    final String _gratitudeResponse = await Navigator.push(context, route)
+    final String _gratitudeResponse = await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Gratitude(radioGroupValue: -1))
+    );
+    _howAreYou = _gratitudeResponse ?? '';
   }
 
   @override
