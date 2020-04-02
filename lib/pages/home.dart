@@ -19,7 +19,22 @@ class _HomeState extends State<Home> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            
+            IconButton(
+              icon: Icon(Icons.bookmark_border),
+              color: Colors.white,
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.access_alarm),
+              color: Colors.white,
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.flight),
+              color: Colors.white,
+              onPressed: () {},
+            ),
+            Divider()
           ],
         ),
       ),
