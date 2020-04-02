@@ -20,6 +20,7 @@ class _GratitudeState extends State<Gratitude> {
           ),
         ],
       ),
+      body: SafeArea(),
     );
   }
 }
