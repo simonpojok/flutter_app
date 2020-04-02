@@ -25,7 +25,9 @@ class _HomeState extends State<Home> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        
+        onPressed: () => _openPageGratitude(context: context),
+        tooltip: 'About',
+        child: Icon(Icons.sentiment_satisfied),
       ),
     );
   }
