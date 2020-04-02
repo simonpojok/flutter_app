@@ -16,13 +16,9 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    _listPages
-      ..add(Birthdays())
-      ..add(Gratitude())
-      ..add(Reminders());
-      _currentPage = Birthdays();
+    _listPages..add(Birthdays())..add(Gratitude())..add(Reminders());
+    _currentPage = Birthdays();
   }
-
 
   void _changePage(int selectedIndex) {
     setState(() {
@@ -30,6 +26,7 @@ class _HomeState extends State<Home> {
       _currentPage = _listPages[selectedIndex];
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
