@@ -18,6 +18,12 @@ class _HomeState extends State<Home> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.cake),
+            title: Text('Birthdays')
+          ),
+        ],
       ),
     );
   }
