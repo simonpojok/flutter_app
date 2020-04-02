@@ -21,6 +21,13 @@ class _GratitudeState extends State<Gratitude> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    _gratitudeList..add('Family')..add('Friends')..add('Coffee');
+    _radioGroupValue = widget.radioGroupValue;
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
