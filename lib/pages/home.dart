@@ -7,7 +7,15 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   String _howAreYou = '..';
-  void _openPageAbout({ BuildContext context, bool fullscreenDialog = false }) {}
+  void _openPageAbout({ BuildContext context, bool fullscreenDialog = false }) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        fullscreenDialog: fullscreenDialog,
+        builder: (context) => About(),
+      )
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
