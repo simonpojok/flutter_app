@@ -49,6 +49,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           controller: _tabController,
           labelColor: Colors.black12,
           unselectedLabelColor: Colors.black45,
+          tabs: <Widget>[
+            Tab(
+              icon: Icon(Icons.cake),
+              text: 'Birthdays'
+            ),
+            Tab(
+              icon: Icon(Icons.sentiment_satisfied),
+              text: 'Gratitude',
+            ),
+            Tab(
+              icon: Icon(Icons.access_alarm),
+              text: 'Reminders',
+            ),
+          ],
         ),
       ),
     );
