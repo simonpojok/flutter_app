@@ -14,7 +14,9 @@ class _GratitudeState extends State<Gratitude> {
 
   void _radioOnChanged(int index) {
     setState(() {
-      
+      _radioGroupValue = index;
+      _selectedGratitude = _gratitudeList[index];
+      print('_selectedRadioValue $_selectedGratitude');
     });
   }
 
