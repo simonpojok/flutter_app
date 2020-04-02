@@ -13,7 +13,17 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        ListTile(),
+        ListTile(
+          leading: Icon(Icons.cake),
+          title: Text('Birthdays'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Birthdays())
+            );
+          },
+        ),
         ListTile(),
         ListTile(),
         Divider(color: Colors.grey),
