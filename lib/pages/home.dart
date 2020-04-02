@@ -16,7 +16,12 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomAppBar(
         color: Colors.blue.shade200,
         shape: CircularNotchedRectangle(),
-        child: Row(),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            
+          ],
+        ),
       ),
     );
   }
