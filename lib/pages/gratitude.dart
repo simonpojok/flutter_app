@@ -47,19 +47,19 @@ class _GratitudeState extends State<Gratitude> {
               Radio(
                 value: 0,
                 groupValue: _radioGroupValue,
-                onChanged: (index) => _radioOnChange(index),
+                onChanged: (index) => _radioOnChanged(index),
               ),
               Text('Family'),
               Radio(
                 value: 1,
                 groupValue: _radioGroupValue,
-                onChanged: (index) => _radioOnChange(index),
+                onChanged: (index) => _radioOnChanged(index),
               ),
               Text('Friends'),
               Radio(
                 value: 2,
                 groupValue: _radioGroupValue,
-                onChanged: (index) = > _radioOnChanged(index),
+                onChanged: (index) => _radioOnChanged(index),
               ),
               Text('Coffee'),
             ],
