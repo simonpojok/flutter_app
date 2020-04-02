@@ -18,6 +18,9 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
+      body: SafeArea(
+        child: Padding(),
+      ),
     );
   }
 }
