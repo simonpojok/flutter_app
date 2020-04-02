@@ -6,10 +6,18 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  void _changePage(int selectedIndex) {
+    setState(() {
+      _currentIndex = selectedIndex;
+      _currentPage = _listPages[selectedIndex];
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Bottom Navigation'),),
+      appBar: AppBar(
+        title: Text('Bottom Navigation'),
+      ),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(16.0),
@@ -24,13 +32,9 @@ class _HomeState extends State<Home> {
             title: Text('Birthdays'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.sentiment_satisfied),
-            title: Text('Gratitude')
-          ),
+              icon: Icon(Icons.sentiment_satisfied), title: Text('Gratitude')),
           BottomNavigationBarItem(
-            icon: Icon(Icons.access_alarm),
-            title: Text('Reminders')
-          ),
+              icon: Icon(Icons.access_alarm), title: Text('Reminders')),
         ],
         onTap: (selectedIndex) => _changePage(selectedIndex),
       ),
