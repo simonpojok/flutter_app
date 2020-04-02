@@ -12,7 +12,22 @@ class _HomeState extends State<Home> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: GestureDetectorWidget(),
+          child: GestureDetector(
+            child: Hero(
+              tag: 'format_paint',
+              child: Icon(
+                Icons.format_paint,
+                color: Colors.lightBlue,
+                size: 120.0
+              ),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Fly())
+              );
+            },
+          ),
         ),
       ),
     );
