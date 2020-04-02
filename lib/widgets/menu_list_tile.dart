@@ -18,10 +18,7 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
           title: Text('Birthdays'),
           onTap: () {
             Navigator.pop(context);
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Birthdays())
-            );
+            Navigator.push(context,MaterialPageRoute(builder: (context) => Birthdays()));
           },
         ),
         ListTile(
@@ -29,7 +26,7 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
           title: Text('Gratitude'),
           onTap: () {
             Navigator.pop(context);
-            Navigator.push(context, MaterialPageRoute(builder: (context) => Gratitude()))
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Gratitude()));
           },
         ),
         ListTile(
@@ -37,7 +34,7 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
           title: Text('Reminders'),
           onTap: () {
             Navigator.pop(context);
-            Navigator.push(context, MaterialPageRoute(builder: (context) => Reminders()))
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Reminders()));
           },
         ),
         Divider(color: Colors.grey),
