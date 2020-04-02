@@ -39,6 +39,11 @@ class _HomeState extends State<Home> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.blue.shade200,
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
