@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'about.dart';
+import 'gratitude.dart';
 
 class Home extends StatefulWidget {
   @override
