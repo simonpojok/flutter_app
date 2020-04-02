@@ -24,7 +24,14 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
             );
           },
         ),
-        ListTile(),
+        ListTile(
+          leading: Icon(Icons.sentiment_satisfied),
+          title: Text('Gratitude'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Gratitude()))
+          },
+        ),
         ListTile(),
         Divider(color: Colors.grey),
         ListTile(),
