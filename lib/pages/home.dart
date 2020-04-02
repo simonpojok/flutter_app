@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'birthdays.dart';
+import 'gratitude.dart';
+import 'reminders.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,7 +17,7 @@ class _HomeState extends State<Home> {
         child: TabBarView(
           controller: _tabController,
           children: <Widget>[
-            BirthDays(),
+            Birthdays(),
             Gratitude(),
             Reminders(),
           ],
