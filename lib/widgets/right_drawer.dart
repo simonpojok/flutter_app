@@ -9,8 +9,13 @@ class RightDrawerWidget extends StatefulWidget {
 class _RightDrawerWidgetState extends State<RightDrawerWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Drawer(
+      child: ListView(
+        children: <Widget>[
+          DrawerHeader(),
+          MenuListTileWidget(),
+        ],
+      ),
     );
   }
 }
