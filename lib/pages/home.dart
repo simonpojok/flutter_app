@@ -19,7 +19,13 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: SafeArea(
-        child: Padding(),
+        child: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Text('Grateful for: $_howAreYou', style: TextStyle(fontSize: 32.0),),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        
       ),
     );
   }
