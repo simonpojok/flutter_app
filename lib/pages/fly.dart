@@ -6,6 +6,7 @@ class Fly extends StatelessWidget {
   Widget build(BuildContext context) {
     double _width = MediaQuery.of(context).size.shortestSide /2;
     return Scaffold(
+      appBar: AppBar(title: Text('Flay'),),
       body: Hero(
         tag: 'format_paint',
         child: Container(
