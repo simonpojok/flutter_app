@@ -11,7 +11,10 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(title: Text('Bottom Navigation'),),
       body: SafeArea(
-        child: Padding(),
+        child: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: _currentPage,
+        ),
       ),
     );
   }
