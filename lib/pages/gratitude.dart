@@ -20,7 +20,33 @@ class _GratitudeState extends State<Gratitude> {
           ),
         ],
       ),
-      body: SafeArea(),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Row(
+            children: <Widget>[
+              Radio(
+                value: 0,
+                groupValue: _radioGroupValue,
+                onChanged: (index) => _radioOnChange(index),
+              ),
+              Text('Family'),
+              Radio(
+                value: 1,
+                groupValue: _radioGroupValue,
+                onChanged: (index) => _radioOnChange(index),
+              ),
+              Text('Friends'),
+              Radio(
+                value: 2,
+                groupValue: _radioGroupValue,
+                onChanged: (index) = > _radioOnChanged(index),
+              ),
+              Text('Coffee'),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
