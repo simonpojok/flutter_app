@@ -9,8 +9,14 @@ class LeftDrawerWidget extends StatefulWidget {
 class _LeftDrawerWidgetState extends State<LeftDrawerWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Drawer(
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: <Widget>[
+          UserAccountsDrawerHeader(),
+          MenuListTileWidget(),
+        ],
+      ),
     );
   }
 }
