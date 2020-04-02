@@ -13,6 +13,7 @@ class _HomeState extends State<Home> {
       body: SafeArea(
         child: Container(),
       ),
+      bottomNavigationBar: BottomAppBar(),
     );
   }
 }
