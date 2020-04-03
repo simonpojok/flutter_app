@@ -13,7 +13,9 @@ class Home extends StatelessWidget {
       ),
       body: CustomScrollView(
         slivers: <Widget>[
-
+          const SliverAppBarWidget(),
+          const SliverListWidget(),
+          const SliverGridWidget(),
         ],
       ),
     );
