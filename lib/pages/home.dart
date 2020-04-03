@@ -12,9 +12,9 @@ class Home extends StatelessWidget {
           itemCount: 7,
           itemBuilder: (BuildContext context, int index) {
             if (index.isEven) {
-              return StackWidget();
+              return const StackWidget();
             } else {
-              return StackFavoriteWidget();
+              return const StackFavoriteWidget();
             }
           },
         ),
