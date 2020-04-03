@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/header.dart';
+import 'package:flutter_app/widgets/row.dart';
+import 'package:flutter_app/widgets/row_with_card.dart';
 
 class Home extends StatelessWidget {
   @override
