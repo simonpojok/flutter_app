@@ -13,7 +13,7 @@ class GridViewBuilderWidget extends StatelessWidget {
         print('_buildGridViewBuilder $index');
         return Card(
           color: Colors.lightGreen.shade50,
-          margin: EdgeInsets.all(8.0),
+          margin: EdgeInsets.all(4.0),
           child: InkWell(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
