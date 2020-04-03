@@ -29,6 +29,26 @@ class StackFavoriteWidget extends StatelessWidget {
                 ),
               ),
             ),
+            Positioned(
+              bottom: 10.0,
+              right: 10.0,
+              child: CircleAvatar(
+                radius: 48.0,
+                backgroundImage: AssetImage('assets/images/eagle.jpg'),
+              ),
+            ),
+            Positioned(
+              bottom: 16.0,
+              left: 16.0,
+              child: Text(
+                'Bald Eagle',
+                style: TextStyle(
+                  fontSize: 32.0,
+                  color: Colors.white30,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+            ),
           ],
         ),
       ),
