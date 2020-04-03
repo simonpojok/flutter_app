@@ -6,7 +6,18 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('List')),
       body: SafeArea(
-        child: ListView.builder(itemBuilder: null),
+        child: ListView.builder(
+          itemCount: 20,
+          itemBuilder: (BuildContext context, int index) {
+            if (index == 0) {
+              return HeaderWidget(index: index);
+            } else if (index >= 1 && index <= 3) {
+              return RowWithCardWidget(index: index);
+            } else {
+              return RowWidget(index: index);
+            }
+          },
+        ),
       ),
     );
   }
