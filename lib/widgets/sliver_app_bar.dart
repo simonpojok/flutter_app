@@ -5,7 +5,15 @@ class SliverAppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      
+      forceElevated: true,
+      expandedHeight: 250.0,
+      flexibleSpace: FlexibleSpaceBar(
+        title: Text('Parallax Effect'),
+        background: Image(
+          image: AssetImage('assets/images/desk.jpg'),
+          fit: BoxFit.cover,
+        ),
+      ),
     );
   }
 }
