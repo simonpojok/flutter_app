@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('GridView'),),
       body: SafeArea(
-        child: const GridViewBuildWidget(),
+        child: GridViewBuilderWidget(),
       ),
     );
   }
