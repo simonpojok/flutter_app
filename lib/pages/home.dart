@@ -3,8 +3,16 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('CustomScrollView - Slivers'),
+        elevation: 0.0,
+      ),
+      body: CustomScrollView(
+        slivers: <Widget>[
+          
+        ],
+      ),
     );
   }
 }
