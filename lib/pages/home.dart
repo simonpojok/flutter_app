@@ -8,7 +8,16 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Stack Widget'),),
       body: SafeArea(
-        child: ListView.builder(),
+        child: ListView.builder(
+          itemCount: 7,
+          itemBuilder: (BuildContext context, int index) {
+            if (index.isEven) {
+              return const StackWidget();
+            } else {
+              return const StackFavoriteWidget();
+            }
+          },
+        ),
       ),
     );
   }
