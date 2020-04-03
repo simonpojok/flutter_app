@@ -28,6 +28,18 @@ class StackFavoriteWidget extends StatelessWidget {
                 backgroundImage: AssetImage('assets/images/eagle.jpg'),
               ),
             ),
+            Positioned(
+              bottom: 16.0,
+              right: 16.0,
+              child: Text(
+                'Bald Eagle',
+                style: TextStyle(
+                  fontSize: 32.0,
+                  color: Colors.white30,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+            ),
           ],
         ),
       ),
