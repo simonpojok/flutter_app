@@ -11,7 +11,7 @@ class StackWidget extends StatelessWidget {
         ),
         Positioned(
           bottom: 10.0,
-          right: 10.0,
+          left: 10.0,
           child: CircleAvatar(
             radius: 48.0,
             backgroundImage: AssetImage('assets/images/lion.jpg'),
