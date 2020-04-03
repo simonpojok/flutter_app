@@ -10,7 +10,7 @@ class SliverAppBarWidget extends StatelessWidget {
       flexibleSpace: FlexibleSpaceBar(
         title: Text('Parallax Effect'),
         background: Image(
-          image: AssetImage('assets/images/desk.jpg'),
+          image: AssetImage('assets/images/desk.jpeg'),
           fit: BoxFit.cover,
         ),
       ),
