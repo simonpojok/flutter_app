@@ -54,7 +54,12 @@ class Home extends StatelessWidget {
     );
   }
 
-  _buildJournalHeaderImage() {}
+  Image _buildJournalHeaderImage() {
+    return Image(
+      image: AssetImage('assets/images/present.jpg'),
+      fit: BoxFit.cover,
+    );
+  }
 
   _buildJournalEntry() {}
 
