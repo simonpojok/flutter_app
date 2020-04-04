@@ -12,9 +12,15 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Colors.black54),
         brightness: Brightness.light,
-        leading: IconButton(icon: Icon(Icons.menu), onPressed: () { },),
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {},
+        ),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.cloud_queue), onPressed: () { },)
+          IconButton(
+            icon: Icon(Icons.cloud_queue),
+            onPressed: () {},
+          )
         ],
       ),
       body: _buildBody(),
@@ -26,10 +32,35 @@ class Home extends StatelessWidget {
       child: Column(
         children: <Widget>[
           _buildJournalHeaderImage(),
+          SafeArea(
+            child: Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  _buildJournalEntry(),
+                  Divider(),
+                  _buildJournalWeather(),
+                  Divider(),
+                  _buildJournalTags(),
+                  Divider(),
+                  _buildJournalFooterImages(),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
 
   _buildJournalHeaderImage() {}
+
+  _buildJournalEntry() {}
+
+  _buildJournalWeather() {}
+
+  _buildJournalTags() {}
+
+  _buildJournalFooterImages() {}
 }
