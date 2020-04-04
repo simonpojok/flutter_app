@@ -112,6 +112,7 @@ class Home extends StatelessWidget {
                 Text(
                   '4500 San Alpho Drive, Dallas, TX United States',
                   style: TextStyle(color: Colors.grey),
+                  overflow: TextOverflow.clip,
                 ),
               ],
             ),
