@@ -20,4 +20,6 @@ class Home extends StatelessWidget {
       body: _buildBody(),
     );
   }
+
+  _buildBody() {}
 }
