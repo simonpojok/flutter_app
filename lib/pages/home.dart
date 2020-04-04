@@ -21,5 +21,15 @@ class Home extends StatelessWidget {
     );
   }
 
-  _buildBody() {}
+  _buildBody() {
+    return SingleChildScrollView(
+      child: Column(
+        children: <Widget>[
+          _buildJournalHeaderImage(),
+        ],
+      ),
+    );
+  }
+
+  _buildJournalHeaderImage() {}
 }
