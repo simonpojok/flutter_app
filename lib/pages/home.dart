@@ -67,10 +67,7 @@ class Home extends StatelessWidget {
       children: <Widget>[
         Text(
           'My BirthDay',
-          style: TextStyle(
-            fontSize: 32.0,
-            fontWeight: FontWeight.bold
-          ),
+          style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold),
         ),
         Divider(),
         Text(
@@ -96,13 +93,18 @@ class Home extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(width: 16.0,),
+        SizedBox(
+          width: 16.0,
+        ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Row(
               children: <Widget>[
-                Text('18 Clear', style: TextStyle(color: Colors.deepOrange),)
+                Text(
+                  '18 Clear',
+                  style: TextStyle(color: Colors.deepOrange),
+                )
               ],
             ),
             Row(
@@ -121,26 +123,54 @@ class Home extends StatelessWidget {
 
   Wrap _buildJournalTags() {
     return Wrap(
-      spacing: 8.0,
-      children: List.generate(7, (int index) {
-        return Chip(
-          label: Text(
-            'Gift ${index + 1 }',
-            style: TextStyle(fontSize: 10.0),
-          ),
-          avatar: Icon(
-            Icons.card_giftcard,
-            color: Colors.blue.shade300,
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(4.0),
-            side: BorderSide(color: Colors.grey)
-          ),
-          backgroundColor: Colors.grey.shade100,
-        );
-      })
-    );
+        spacing: 8.0,
+        children: List.generate(7, (int index) {
+          return Chip(
+            label: Text(
+              'Gift ${index + 1}',
+              style: TextStyle(fontSize: 10.0),
+            ),
+            avatar: Icon(
+              Icons.card_giftcard,
+              color: Colors.blue.shade300,
+            ),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(4.0),
+                side: BorderSide(color: Colors.grey)),
+            backgroundColor: Colors.grey.shade100,
+          );
+        }));
   }
 
-  _buildJournalFooterImages() {}
+  Row _buildJournalFooterImages() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        CircleAvatar(
+          backgroundImage: AssetImage('assets/images/salmon.jpg'),
+          radius: 40.0,
+        ),
+        CircleAvatar(
+          backgroundImage: AssetImage('assets/images/asparagus.jpg'),
+          radius: 40.0,
+        ),
+        CircleAvatar(
+          backgroundImage: AssetImage('assets/images/strawberries.jpeg'),
+          radius: 40.0,
+        ),
+        SizedBox(
+          width: 100.0,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: <Widget>[
+              Icon(Icons.cake),
+              Icon(Icons.star_border),
+              Icon(Icons.music_note),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
 }
