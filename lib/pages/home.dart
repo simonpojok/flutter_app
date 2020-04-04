@@ -83,7 +83,41 @@ class Home extends StatelessWidget {
     );
   }
 
-  _buildJournalWeather() {}
+  Row _buildJournalWeather() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Icon(
+              Icons.wb_sunny,
+              color: Colors.orange,
+            ),
+          ],
+        ),
+        SizedBox(width: 16.0,),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Text('18 Clear', style: TextStyle(color: Colors.deepOrange),)
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Text(
+                  '4500 San Alpho Drive, Dallas, TX United States',
+                  style: TextStyle(color: Colors.grey),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ],
+    );
+  }
 
   _buildJournalTags() {}
 
